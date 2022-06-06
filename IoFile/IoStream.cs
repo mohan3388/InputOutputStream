@@ -45,5 +45,18 @@ namespace IoFile
 
             Console.ReadKey();
         }
+        public void StreamReader()
+        {
+            using (StreamReader sr = new StreamReader(file))
+            {
+                String s = " ";
+                while((s=sr.ReadLine())!=null)
+                {
+                    Console.WriteLine(s);
+                }
+                Console.ReadKey();
+            }
+
+        }
     }
 }
