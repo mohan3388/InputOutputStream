@@ -25,5 +25,11 @@ namespace IoFile
             Console.WriteLine(lines[1]);
             Console.ReadKey();
         }
+        public void ReadAllText()
+        {
+            string line = File.ReadAllText(Path);
+            Console.WriteLine(line);
+            Console.ReadKey();
+        }
     }
 }
