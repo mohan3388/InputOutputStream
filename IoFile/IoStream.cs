@@ -9,6 +9,8 @@ namespace IoFile
     public class IoStream
     {
         string Path = @"D:\dotnet\Files\InputOutputStream\IoFile\File.txt";
+        
+        string file = @"D:\dotnet\Files\InputOutputStream\IoFile\Filecopys.txt";
         string[] lines;
         public void FileExists()
         {
@@ -29,6 +31,12 @@ namespace IoFile
         {
             string line = File.ReadAllText(Path);
             Console.WriteLine(line);
+            Console.ReadKey();
+        }
+        public void CopyFile()
+        {
+          
+            File.Copy(Path, file);
             Console.ReadKey();
         }
     }
