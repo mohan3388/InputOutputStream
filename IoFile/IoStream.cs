@@ -39,5 +39,11 @@ namespace IoFile
             File.Copy(Path, file);
             Console.ReadKey();
         }
+        public void DeleteFile()
+        {
+            File.Delete(Path);
+
+            Console.ReadKey();
+        }
     }
 }
